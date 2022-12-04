@@ -365,13 +365,13 @@ qemufwcfg*	at acpi?		# QEMU Firmware Configuration device
 sdhc*		at acpi?		# SD Host Controller
 #sony*		at acpi?		# Sony Notebook Controller
 #spic*		at acpi?		# Sony Programmable I/O Controller
-wsmouse*	at spic?		# mouse
+#wsmouse*	at spic?		# mouse
 #thinkpad*	at acpi?		# IBM/Lenovo Thinkpad hotkeys
 #tpm*		at acpi?		# ACPI TPM (Experimental)
 #ug*		at acpi?		# Abit uGuru Hardware monitor
 #valz*		at acpi?		# Toshiba Dynabook hotkeys
 #wb*		at acpi?		# Winbond W83L518D SD/MMC reader
-sdmmc*		at wb?			# SD/MMC bus
+#sdmmc*		at wb?			# SD/MMC bus
 #wmidell*	at acpiwmibus?		# Dell WMI mappings
 #wmieeepc*	at acpiwmibus?		# Asus Eee PC WMI mappings
 #wmihp*		at acpiwmibus?		# HP WMI mappings
@@ -1107,7 +1107,7 @@ sdhc*	at pci?		# SD Host Controller
 rtsx*	at pci?		# Realtek RTS5209/RTS5229 Card Reader
 sdhc*	at cardbus?	# SD Host Controller
 sdmmc*	at sdhc?	# SD/MMC bus
-sdmmc*	at rtsx?	# SD/MMC bus
+#sdmmc*	at rtsx?	# SD/MMC bus
 
 ld*	at sdmmc?
 
