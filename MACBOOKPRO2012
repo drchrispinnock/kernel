@@ -671,9 +671,9 @@ esiop*	at pci? dev ? function ?	# Symbios 53c875 and newer SCSI
 trm*	at pci? dev ? function ?	# Tekram DC-395U/UW/F, DC-315/U SCSI
 
 # PCMCIA SCSI controllers
-aic*	at pcmcia? function ?		# Adaptec APA-1460 SCSI
-esp*	at pcmcia? function ?		# Qlogic ESP406/FAS408 SCSI
-spc*	at pcmcia? function ?		# Fujitsu MB87030/MB89352 SCSI
+#aic*	at pcmcia? function ?		# Adaptec APA-1460 SCSI
+#esp*	at pcmcia? function ?		# Qlogic ESP406/FAS408 SCSI
+#spc*	at pcmcia? function ?		# Fujitsu MB87030/MB89352 SCSI
 
 # CardBus SCSI cards
 adv*	at cardbus? function ?	# AdvanSys 1200[A,B], 9xx[U,UA] SCSI
@@ -745,11 +745,11 @@ toshide* at pci? dev ? function ?	# TOSHIBA PICCOLO controllers
 viaide* at pci? dev ? function ?	# VIA/AMD/Nvidia IDE controllers
 
 # PCMCIA IDE controllers
-wdc*	at pcmcia? function ?
+#wdc*	at pcmcia? function ?
 
 # CardBus IDE controllers
-njata*	at cardbus? function ? flags 0x01	# Workbit NinjaATA-32
-siisata* at cardbus? function ? 	# SiI SteelVine controllers
+#njata*	at cardbus? function ? flags 0x01	# Workbit NinjaATA-32
+#siisata* at cardbus? function ? 	# SiI SteelVine controllers
 
 # ISA ST506, ESDI, and IDE controllers
 # Use flags 0x01 if you want to try to use 32bits data I/O (the driver will
@@ -874,37 +874,37 @@ wpi*	at pci? dev ? function ?	# Intel PRO/Wireless 3945ABG
 xge*	at pci? dev ? function ?	# Neterion (S2io) Xframe-I 10GbE
 
 # PCMCIA network interfaces
-an*	at pcmcia? function ?		# Aironet PC4500/PC4800 (802.11)
-awi*	at pcmcia? function ?		# BayStack 650/660 (802.11FH/DS)
-cnw*	at pcmcia? function ?		# Xircom/Netwave AirSurfer
-cs*	at pcmcia? function ?		# CS89xx Ethernet
-ep*	at pcmcia? function ?		# 3Com 3c589 and 3c562 Ethernet
-malo*	at pcmcia? function ?		# Marvell Libertas
-mbe*	at pcmcia? function ?		# MB8696x based Ethernet
-ne*	at pcmcia? function ?		# NE2000-compatible Ethernet
-ray*	at pcmcia? function ?		# Raytheon Raylink (802.11)
-sm*	at pcmcia? function ?		# Megahertz Ethernet
-wi*	at pcmcia? function ?		# Lucent/Intersil WaveLan IEEE (802.11)
-xirc*	at pcmcia? function ?		# Xircom CreditCard Ethernet
-com*	at xirc?
-xi*	at xirc?
+#an*	at pcmcia? function ?		# Aironet PC4500/PC4800 (802.11)
+#awi*	at pcmcia? function ?		# BayStack 650/660 (802.11FH/DS)
+#cnw*	at pcmcia? function ?		# Xircom/Netwave AirSurfer
+#cs*	at pcmcia? function ?		# CS89xx Ethernet
+#ep*	at pcmcia? function ?		# 3Com 3c589 and 3c562 Ethernet
+#malo*	at pcmcia? function ?		# Marvell Libertas
+#mbe*	at pcmcia? function ?		# MB8696x based Ethernet
+#ne*	at pcmcia? function ?		# NE2000-compatible Ethernet
+#ray*	at pcmcia? function ?		# Raytheon Raylink (802.11)
+#sm*	at pcmcia? function ?		# Megahertz Ethernet
+#wi*	at pcmcia? function ?		# Lucent/Intersil WaveLan IEEE (802.11)
+##xirc*	at pcmcia? function ?		# Xircom CreditCard Ethernet
+#com*	at xirc?
+#xi*	at xirc?
 
-mhzc*	at pcmcia? function ?		# Megahertz Ethernet/Modem combo cards
-com*	at mhzc?
-sm*	at mhzc?
+#.mhzc*	at pcmcia? function ?		# Megahertz Ethernet/Modem combo cards
+#com*	at mhzc?
+#sm*	at mhzc?
 
 # CardBus network cards
-ath*	at cardbus? function ?	# Atheros 5210/5211/5212 802.11
-athn*	at cardbus? function ?	# Atheros AR9k (802.11a/g/n) - UNTESTED
-atw*	at cardbus? function ?	# ADMtek ADM8211 (802.11)
-ex*	at cardbus? function ?	# 3Com 3C575TX
-fxp*	at cardbus? function ?	# Intel i8255x
-malo*	at cardbus? function ?	# Marvell Libertas Wireless
-ral*	at cardbus? function ?	# Ralink Technology RT25x0 802.11a/b/g
-re*	at cardbus? function ?	# Realtek 8139C+/8169/8169S/8110S
-rtk*	at cardbus? function ?	# Realtek 8129/8139
-rtw*	at cardbus? function ?	# Realtek 8180L (802.11)
-tlp*	at cardbus? function ?	# DECchip 21143
+#ath*	at cardbus? function ?	# Atheros 5210/5211/5212 802.11
+#athn*	at cardbus? function ?	# Atheros AR9k (802.11a/g/n) - UNTESTED
+#atw*	at cardbus? function ?	# ADMtek ADM8211 (802.11)
+#ex*	at cardbus? function ?	# 3Com 3C575TX
+#fxp*	at cardbus? function ?	# Intel i8255x
+#malo*	at cardbus? function ?	# Marvell Libertas Wireless
+#ral*	at cardbus? function ?	# Ralink Technology RT25x0 802.11a/b/g
+#re*	at cardbus? function ?	# Realtek 8139C+/8169/8169S/8110S
+#rtk*	at cardbus? function ?	# Realtek 8129/8139
+#rtw*	at cardbus? function ?	# Realtek 8180L (802.11)
+#tlp*	at cardbus? function ?	# DECchip 21143
 
 # MII/PHY support
 acphy*	at mii? phy ?			# DAltima AC101 and AMD Am79c874 PHYs
@@ -956,15 +956,15 @@ ohci*	at pci?	dev ? function ?	# Open Host Controller
 uhci*	at pci?	dev ? function ?	# Universal Host Controller (Intel)
 
 # CardBus USB controllers
-ehci*	at cardbus? function ?	# Enhanced Host Controller
-ohci*	at cardbus? function ?	# Open Host Controller
-uhci*	at cardbus? function ?		# Universal Host Controller (Intel)
+#ehci*	at cardbus? function ?	# Enhanced Host Controller
+#ohci*	at cardbus? function ?	# Open Host Controller
+#uhci*	at cardbus? function ?		# Universal Host Controller (Intel)
 
 # ISA USB controllers
 #slhci0	at isa? port 0x300 irq 5	# ScanLogic SL811HS
 
 # PCMCIA USB controllers
-slhci*	at pcmcia? function ?		# ScanLogic SL811HS
+#slhci*	at pcmcia? function ?		# ScanLogic SL811HS
 
 # USB bus support
 #usb*	at vhci?
@@ -980,7 +980,7 @@ include "dev/usb/usbdevices.config"
 fwohci* at pci? dev ? function ?	# IEEE1394 Open Host Controller
 
 # CardBus IEEE1394 controllers
-fwohci* at cardbus? function ?		# IEEE1394 Open Host Controller
+#fwohci* at cardbus? function ?		# IEEE1394 Open Host Controller
 
 ieee1394if* at fwohci?
 fwip*	at ieee1394if?			# IP over IEEE1394
@@ -1063,8 +1063,8 @@ radio* at bktr?
 # Bluetooth Controller and Device support
 
 # Bluetooth PCMCIA Controllers
-bt3c* at pcmcia? function ?		# 3Com 3CRWB6096-A
-btbc* at pcmcia? function ?		# AnyCom BlueCard LSE041/039/139
+#bt3c* at pcmcia? function ?		# 3Com 3CRWB6096-A
+#btbc* at pcmcia? function ?		# AnyCom BlueCard LSE041/039/139
 
 # Bluetooth SDIO Controllers
 #sbt* at sdmmc?
