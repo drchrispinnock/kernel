@@ -20,9 +20,9 @@
 
 include 	"arch/amd64/conf/std.amd64"
 
-options 	INCLUDE_CONFIG_FILE	# embed config file in kernel binary
+#options 	INCLUDE_CONFIG_FILE	# embed config file in kernel binary
 
-#ident		"GENERIC-$Revision: 1.599 $"
+#ident		"MACBOOKPRO2012"
 
 maxusers	64		# estimated number of users
 
@@ -454,9 +454,9 @@ sysbeep0	at pcppi?
 #sisdrm* 	at drm?		# SiS DRM driver
 #tdfxdrm*	at drm?		# 3dfx (voodoo) DRM driver
 
-# DRMKMS drivers
-i915drmkms*	at pci? dev ? function ?
-intelfb*	at intelfbbus?
+# DRMKMS drivers - XXX present on the MacbookPRO
+#i915drmkms*	at pci? dev ? function ?
+#intelfb*	at intelfbbus?
 
 #radeon* 	at pci? dev ? function ?
 #radeondrmkmsfb* at radeonfbbus?
@@ -464,6 +464,7 @@ intelfb*	at intelfbbus?
 #amdgpu*	at pci? dev ? function ?
 #amdgpufb*	at amdgpufbbus?
 
+# XXX Present on the MacbookPro
 #nouveau*	at pci? dev ? function ?
 #nouveaufb*	at nouveaufbbus?
 
