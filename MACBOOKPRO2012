@@ -1067,7 +1067,7 @@ bt3c* at pcmcia? function ?		# 3Com 3CRWB6096-A
 btbc* at pcmcia? function ?		# AnyCom BlueCard LSE041/039/139
 
 # Bluetooth SDIO Controllers
-sbt* at sdmmc?
+#sbt* at sdmmc?
 
 # Bluetooth USB Controllers
 ubt* at uhub? port ?
@@ -1105,7 +1105,7 @@ btsco* at bthub?
 # SD/MMC controller
 sdhc*	at pci?		# SD Host Controller
 rtsx*	at pci?		# Realtek RTS5209/RTS5229 Card Reader
-sdhc*	at cardbus?	# SD Host Controller
+#sdhc*	at cardbus?	# SD Host Controller
 sdmmc*	at sdhc?	# SD/MMC bus
 #sdmmc*	at rtsx?	# SD/MMC bus
 
