@@ -362,7 +362,7 @@ joy*		at acpi?		# Joystick/Game port
 pckbc*		at acpi?		# PC keyboard controller
 pcppi*		at acpi?		# AT-style speaker sound
 qemufwcfg*	at acpi?		# QEMU Firmware Configuration device
-sdhc*		at acpi?		# SD Host Controller
+#sdhc*		at acpi?		# SD Host Controller
 #sony*		at acpi?		# Sony Notebook Controller
 #spic*		at acpi?		# Sony Programmable I/O Controller
 #wsmouse*	at spic?		# mouse
