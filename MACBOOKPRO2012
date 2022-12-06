@@ -415,12 +415,12 @@ isa0	at pcib?
 isa0	at ichlpcib?
 
 # CardBus bridge support
-cbb*		at pci? dev ? function ?
-cardslot*	at cbb?
+#cbb*		at pci? dev ? function ?
+#cardslot*	at cbb?
 
 # CardBus bus support
-cardbus*	at cardslot?
-pcmcia* 	at cardslot?
+#cardbus*	at cardslot?
+#pcmcia* 	at cardslot?
 
 # Console Devices
 
@@ -499,7 +499,7 @@ pcmcom* at pcmcia? function ?		# PCMCIA multi-port serial cards
 com*	at pcmcom? slave ?		# ...and the slave devices
 
 # CardBus serial interfaces
-com*	at cardbus? function ?	# Modems and serial cards
+#com*	at cardbus? function ?	# Modems and serial cards
 
 # ISA serial interfaces
 #options 	COM_HAYESP		# adds Hayes ESP serial board support
@@ -671,14 +671,14 @@ esiop*	at pci? dev ? function ?	# Symbios 53c875 and newer SCSI
 trm*	at pci? dev ? function ?	# Tekram DC-395U/UW/F, DC-315/U SCSI
 
 # PCMCIA SCSI controllers
-aic*	at pcmcia? function ?		# Adaptec APA-1460 SCSI
-esp*	at pcmcia? function ?		# Qlogic ESP406/FAS408 SCSI
-spc*	at pcmcia? function ?		# Fujitsu MB87030/MB89352 SCSI
+#aic*	at pcmcia? function ?		# Adaptec APA-1460 SCSI
+#esp*	at pcmcia? function ?		# Qlogic ESP406/FAS408 SCSI
+#spc*	at pcmcia? function ?		# Fujitsu MB87030/MB89352 SCSI
 
 # CardBus SCSI cards
-adv*	at cardbus? function ?	# AdvanSys 1200[A,B], 9xx[U,UA] SCSI
-ahc*	at cardbus? function ?	# Adaptec ADP-1480
-njs*	at cardbus? function ?	# Workbit NinjaSCSI-32
+#adv*	at cardbus? function ?	# AdvanSys 1200[A,B], 9xx[U,UA] SCSI
+#ahc*	at cardbus? function ?	# Adaptec ADP-1480
+#njs*	at cardbus? function ?	# Workbit NinjaSCSI-32
 
 # SCSI bus support
 scsibus* at scsi?
@@ -745,11 +745,11 @@ toshide* at pci? dev ? function ?	# TOSHIBA PICCOLO controllers
 viaide* at pci? dev ? function ?	# VIA/AMD/Nvidia IDE controllers
 
 # PCMCIA IDE controllers
-wdc*	at pcmcia? function ?
+#wdc*	at pcmcia? function ?
 
 # CardBus IDE controllers
-njata*	at cardbus? function ? flags 0x01	# Workbit NinjaATA-32
-siisata* at cardbus? function ? 	# SiI SteelVine controllers
+#njata*	at cardbus? function ? flags 0x01	# Workbit NinjaATA-32
+#siisata* at cardbus? function ? 	# SiI SteelVine controllers
 
 # ISA ST506, ESDI, and IDE controllers
 # Use flags 0x01 if you want to try to use 32bits data I/O (the driver will
@@ -894,17 +894,17 @@ com*	at mhzc?
 sm*	at mhzc?
 
 # CardBus network cards
-ath*	at cardbus? function ?	# Atheros 5210/5211/5212 802.11
-athn*	at cardbus? function ?	# Atheros AR9k (802.11a/g/n) - UNTESTED
-atw*	at cardbus? function ?	# ADMtek ADM8211 (802.11)
-ex*	at cardbus? function ?	# 3Com 3C575TX
-fxp*	at cardbus? function ?	# Intel i8255x
-malo*	at cardbus? function ?	# Marvell Libertas Wireless
-ral*	at cardbus? function ?	# Ralink Technology RT25x0 802.11a/b/g
-re*	at cardbus? function ?	# Realtek 8139C+/8169/8169S/8110S
-rtk*	at cardbus? function ?	# Realtek 8129/8139
-rtw*	at cardbus? function ?	# Realtek 8180L (802.11)
-tlp*	at cardbus? function ?	# DECchip 21143
+#ath*	at cardbus? function ?	# Atheros 5210/5211/5212 802.11
+#athn*	at cardbus? function ?	# Atheros AR9k (802.11a/g/n) - UNTESTED
+#atw*	at cardbus? function ?	# ADMtek ADM8211 (802.11)
+#ex*	at cardbus? function ?	# 3Com 3C575TX
+#fxp*	at cardbus? function ?	# Intel i8255x
+#malo*	at cardbus? function ?	# Marvell Libertas Wireless
+#ral*	at cardbus? function ?	# Ralink Technology RT25x0 802.11a/b/g
+#re*	at cardbus? function ?	# Realtek 8139C+/8169/8169S/8110S
+#rtk*	at cardbus? function ?	# Realtek 8129/8139
+#rtw*	at cardbus? function ?	# Realtek 8180L (802.11)
+#tlp*	at cardbus? function ?	# DECchip 21143
 
 # MII/PHY support
 acphy*	at mii? phy ?			# DAltima AC101 and AMD Am79c874 PHYs
@@ -956,9 +956,9 @@ ohci*	at pci?	dev ? function ?	# Open Host Controller
 uhci*	at pci?	dev ? function ?	# Universal Host Controller (Intel)
 
 # CardBus USB controllers
-ehci*	at cardbus? function ?	# Enhanced Host Controller
-ohci*	at cardbus? function ?	# Open Host Controller
-uhci*	at cardbus? function ?		# Universal Host Controller (Intel)
+#ehci*	at cardbus? function ?	# Enhanced Host Controller
+#ohci*	at cardbus? function ?	# Open Host Controller
+#uhci*	at cardbus? function ?		# Universal Host Controller (Intel)
 
 # ISA USB controllers
 #slhci0	at isa? port 0x300 irq 5	# ScanLogic SL811HS
@@ -980,7 +980,7 @@ include "dev/usb/usbdevices.config"
 fwohci* at pci? dev ? function ?	# IEEE1394 Open Host Controller
 
 # CardBus IEEE1394 controllers
-fwohci* at cardbus? function ?		# IEEE1394 Open Host Controller
+#fwohci* at cardbus? function ?		# IEEE1394 Open Host Controller
 
 ieee1394if* at fwohci?
 fwip*	at ieee1394if?			# IP over IEEE1394
@@ -1105,7 +1105,7 @@ btsco* at bthub?
 # SD/MMC controller
 sdhc*	at pci?		# SD Host Controller
 rtsx*	at pci?		# Realtek RTS5209/RTS5229 Card Reader
-sdhc*	at cardbus?	# SD Host Controller
+#sdhc*	at cardbus?	# SD Host Controller
 sdmmc*	at sdhc?	# SD/MMC bus
 sdmmc*	at rtsx?	# SD/MMC bus
 
