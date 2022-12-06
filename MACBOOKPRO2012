@@ -805,73 +805,73 @@ ld*	at nvme? nsid ?
 # Network Interfaces
 
 # PCI network interfaces
-age*	at pci? dev ? function ?	# Attansic/Atheros L1 Gigabit Ethernet
-alc*	at pci? dev ? function ?	# Attansic/Atheros L1C/L2C Ethernet
-ale*	at pci? dev ? function ?	# Attansic/Atheros L1E Ethernet
-an*	at pci? dev ? function ?	# Aironet PC4500/PC4800 (802.11)
-aq*	at pci? dev ? function ?	# Aquantia AQC 10 gigabit
-ath*	at pci? dev ? function ?	# Atheros 5210/5211/5212 802.11
-athn*	at pci? dev ? function ?	# Atheros AR9k (802.11a/g/n)
-atw*	at pci? dev ? function ?	# ADMtek ADM8211 (802.11)
+#age*	at pci? dev ? function ?	# Attansic/Atheros L1 Gigabit Ethernet
+#alc*	at pci? dev ? function ?	# Attansic/Atheros L1C/L2C Ethernet
+#ale*	at pci? dev ? function ?	# Attansic/Atheros L1E Ethernet
+#an*	at pci? dev ? function ?	# Aironet PC4500/PC4800 (802.11)
+#aq*	at pci? dev ? function ?	# Aquantia AQC 10 gigabit
+#ath*	at pci? dev ? function ?	# Atheros 5210/5211/5212 802.11
+#athn*	at pci? dev ? function ?	# Atheros AR9k (802.11a/g/n)
+#atw*	at pci? dev ? function ?	# ADMtek ADM8211 (802.11)
 bce*	at pci? dev ? function ?	# Broadcom 440x 10/100 Ethernet
 bge*	at pci? dev ? function ?	# Broadcom 570x gigabit Ethernet
 bnx*	at pci? dev ? function ?	# Broadcom NetXtremeII gigabit Ethernet
 bwi*	at pci? dev ? function ?	# Broadcom BCM43xx wireless
 bwfm*	at pci? dev ? function ?	# Broadcom FullMAC
-cas*	at pci? dev ? function ?	# Sun Cassini/Cassini+ Ethernet
-dge*	at pci? dev ? function ?	# Intel 82597 10GbE LR
-ena*	at pci? dev ? function ?	# Amazon.com Elastic Network Adapter
-ep*	at pci? dev ? function ?	# 3Com 3c59x
-epic*	at pci? dev ? function ?	# SMC EPIC/100 Ethernet
-et*	at pci? dev ? function ?	# Agere/LSI ET1310/ET1301 Gigabit
-ex*	at pci? dev ? function ?	# 3Com 90x[BC]
-fxp*	at pci? dev ? function ?	# Intel EtherExpress PRO 10+/100B
-gem*	at pci? dev ? function ?	# Apple GMAC and Sun ERI gigabit enet
-gsip*	at pci? dev ? function ?	# NS83820 Gigabit Ethernet
-hme*	at pci? dev ? function ?	# Sun Microelectronics STP2002-STQ
-iavf*	at pci? dev ? function ?	# Intel Adaptive Virtual Function
-ipw*	at pci? dev ? function ?	# Intel PRO/Wireless 2100
-iwi*	at pci? dev ? function ?	# Intel PRO/Wireless 2200BG
-iwm*	at pci? dev ? function ?	# Intel Centrino 7260
-iwn*	at pci? dev ? function ?	# Intel PRO/Wireless 4965AGN
-ixg*	at pci? dev ? function ?	# Intel 8259x 10 gigabit
-ixl*	at pci? dev ? function ?	# Intel Ethernet 700 Series
-ixv*	at pci? dev ? function ?	# Intel 8259x 10G virtual function
-jme*	at pci? dev ? function ?	# JMicron JMC2[56]0 ethernet
-kse*	at pci? dev ? function ?	# Micrel KSZ8841/8842 ethernet
-lii*	at pci? dev ? function ?	# Atheros L2 Fast-Ethernet
-malo*	at pci? dev ? function ?	# Marvell Libertas Wireless
-mcx*	at pci? dev ? function ?	# Mellanox 5th generation Ethernet
-mskc*	at pci? dev ? function ?	# Marvell Yukon 2 Gigabit Ethernet
-msk*	at mskc?			# Marvell Yukon 2 Gigabit Ethernet
-mtd*	at pci? dev ? function ?	# Myson MTD803 3-in-1 Ethernet
-ne*	at pci? dev ? function ?	# NE2000-compatible Ethernet
-nfe*	at pci?	dev ? function ?	# NVIDIA nForce Ethernet
-ntwoc*	at pci? dev ? function ?	# Riscom/N2 PCI Sync Serial
-pcn*	at pci? dev ? function ?	# AMD PCnet-PCI Ethernet
-ral*	at pci? dev ? function ?	# Ralink Technology RT25x0 802.11a/b/g
-re*	at pci? dev ? function ?	# Realtek 8139C+/8169/8169S/8110S
-rge*	at pci? dev ? function ?	# Realtek 8125
-rtk*	at pci? dev ? function ?	# Realtek 8129/8139
-rtw*	at pci? dev ? function ?	# Realtek 8180L (802.11)
-rtwn*	at pci? dev ? function ?	# Realtek 8188CE/8192CE 802.11b/g/n
-sf*	at pci? dev ? function ?	# Adaptec AIC-6915 Ethernet
-sip*	at pci? dev ? function ?	# SiS 900/DP83815 Ethernet
-skc*	at pci? dev ? function ?	# SysKonnect SK9821 Gigabit Ethernet
-sk*	at skc?				# SysKonnect SK9821 Gigabit Ethernet
-ste*	at pci? dev ? function ?	# Sundance ST-201 Ethernet
-stge*	at pci? dev ? function ?	# Sundance/Tamarack TC9021 Gigabit
-ti*	at pci? dev ? function ?	# Alteon ACEnic gigabit Ethernet
-tl*	at pci? dev ? function ?	# ThunderLAN-based Ethernet
-tlp*	at pci? dev ? function ?	# DECchip 21x4x and clones
-txp*	at pci? dev ? function ?	# 3com 3cr990
-vge*	at pci? dev ? function ?	# VIATech VT612X Gigabit Ethernet
-vmx*	at pci? dev ? function ?	# VMware VMXNET3
-vr*	at pci? dev ? function ?	# VIA Rhine Fast Ethernet
-wi*	at pci? dev ? function ?	# Intersil Prism Mini-PCI (802.11b)
-wm*	at pci? dev ? function ?	# Intel 82543/82544 gigabit
-wpi*	at pci? dev ? function ?	# Intel PRO/Wireless 3945ABG
-xge*	at pci? dev ? function ?	# Neterion (S2io) Xframe-I 10GbE
+#cas*	at pci? dev ? function ?	# Sun Cassini/Cassini+ Ethernet
+#dge*	at pci? dev ? function ?	# Intel 82597 10GbE LR
+#ena*	at pci? dev ? function ?	# Amazon.com Elastic Network Adapter
+#ep*	at pci? dev ? function ?	# 3Com 3c59x
+#epic*	at pci? dev ? function ?	# SMC EPIC/100 Ethernet
+#et*	at pci? dev ? function ?	# Agere/LSI ET1310/ET1301 Gigabit
+#ex*	at pci? dev ? function ?	# 3Com 90x[BC]
+#fxp*	at pci? dev ? function ?	# Intel EtherExpress PRO 10+/100B
+#gem*	at pci? dev ? function ?	# Apple GMAC and Sun ERI gigabit enet
+#gsip*	at pci? dev ? function ?	# NS83820 Gigabit Ethernet
+#hme*	at pci? dev ? function ?	# Sun Microelectronics STP2002-STQ
+#iavf*	at pci? dev ? function ?	# Intel Adaptive Virtual Function
+#ipw*	at pci? dev ? function ?	# Intel PRO/Wireless 2100
+#iwi*	at pci? dev ? function ?	# Intel PRO/Wireless 2200BG
+#iwm*	at pci? dev ? function ?	# Intel Centrino 7260
+#iwn*	at pci? dev ? function ?	# Intel PRO/Wireless 4965AGN
+#ixg*	at pci? dev ? function ?	# Intel 8259x 10 gigabit
+#ixl*	at pci? dev ? function ?	# Intel Ethernet 700 Series
+#ixv*	at pci? dev ? function ?	# Intel 8259x 10G virtual function
+#jme*	at pci? dev ? function ?	# JMicron JMC2[56]0 ethernet
+#kse*	at pci? dev ? function ?	# Micrel KSZ8841/8842 ethernet
+#lii*	at pci? dev ? function ?	# Atheros L2 Fast-Ethernet
+#malo*	at pci? dev ? function ?	# Marvell Libertas Wireless
+#mcx*	at pci? dev ? function ?	# Mellanox 5th generation Ethernet
+#mskc*	at pci? dev ? function ?	# Marvell Yukon 2 Gigabit Ethernet
+#msk*	at mskc?			# Marvell Yukon 2 Gigabit Ethernet
+#mtd*	at pci? dev ? function ?	# Myson MTD803 3-in-1 Ethernet
+#ne*	at pci? dev ? function ?	# NE2000-compatible Ethernet
+#nfe*	at pci?	dev ? function ?	# NVIDIA nForce Ethernet
+#ntwoc*	at pci? dev ? function ?	# Riscom/N2 PCI Sync Serial
+#pcn*	at pci? dev ? function ?	# AMD PCnet-PCI Ethernet
+#ral*	at pci? dev ? function ?	# Ralink Technology RT25x0 802.11a/b/g
+#re*	at pci? dev ? function ?	# Realtek 8139C+/8169/8169S/8110S
+#rge*	at pci? dev ? function ?	# Realtek 8125
+#rtk*	at pci? dev ? function ?	# Realtek 8129/8139
+#rtw*	at pci? dev ? function ?	# Realtek 8180L (802.11)
+#rtwn*	at pci? dev ? function ?	# Realtek 8188CE/8192CE 802.11b/g/n
+#sf*	at pci? dev ? function ?	# Adaptec AIC-6915 Ethernet
+#sip*	at pci? dev ? function ?	# SiS 900/DP83815 Ethernet
+#skc*	at pci? dev ? function ?	# SysKonnect SK9821 Gigabit Ethernet
+#sk*	at skc?				# SysKonnect SK9821 Gigabit Ethernet
+#ste*	at pci? dev ? function ?	# Sundance ST-201 Ethernet
+#stge*	at pci? dev ? function ?	# Sundance/Tamarack TC9021 Gigabit
+#ti*	at pci? dev ? function ?	# Alteon ACEnic gigabit Ethernet
+#tl*	at pci? dev ? function ?	# ThunderLAN-based Ethernet
+#tlp*	at pci? dev ? function ?	# DECchip 21x4x and clones
+#txp*	at pci? dev ? function ?	# 3com 3cr990
+#vge*	at pci? dev ? function ?	# VIATech VT612X Gigabit Ethernet
+#vmx*	at pci? dev ? function ?	# VMware VMXNET3
+#vr*	at pci? dev ? function ?	# VIA Rhine Fast Ethernet
+#wi*	at pci? dev ? function ?	# Intersil Prism Mini-PCI (802.11b)
+#wm*	at pci? dev ? function ?	# Intel 82543/82544 gigabit
+#wpi*	at pci? dev ? function ?	# Intel PRO/Wireless 3945ABG
+#xge*	at pci? dev ? function ?	# Neterion (S2io) Xframe-I 10GbE
 
 # PCMCIA network interfaces
 #an*	at pcmcia? function ?		# Aironet PC4500/PC4800 (802.11)
@@ -907,41 +907,41 @@ xge*	at pci? dev ? function ?	# Neterion (S2io) Xframe-I 10GbE
 #tlp*	at cardbus? function ?	# DECchip 21143
 
 # MII/PHY support
-acphy*	at mii? phy ?			# DAltima AC101 and AMD Am79c874 PHYs
-amhphy* at mii? phy ?			# AMD 79c901 Ethernet PHYs
-atphy*	at mii?	phy ?			# Attansic/Atheros PHYs
+#acphy*	at mii? phy ?			# DAltima AC101 and AMD Am79c874 PHYs
+#amhphy* at mii? phy ?			# AMD 79c901 Ethernet PHYs
+#atphy*	at mii?	phy ?			# Attansic/Atheros PHYs
 bmtphy* at mii? phy ?			# Broadcom BCM5201 and BCM5202 PHYs
 brgphy* at mii? phy ?			# Broadcom BCM5400-family PHYs
-ciphy*	at mii? phy ?			# Cicada CS8201 Gig-E PHYs
-dmphy*	at mii? phy ?			# Davicom DM9101 PHYs
-etphy*	at mii? phy ?			# Agere/LSI ET1011 TruePHY Gig-E PHYs
-exphy*	at mii? phy ?			# 3Com internal PHYs
-gentbi* at mii? phy ?			# Generic Ten-Bit 1000BASE-[CLS]X PHYs
-glxtphy* at mii? phy ?			# Level One LXT-1000 PHYs
-gphyter* at mii? phy ?			# NS83861 Gig-E PHY
-icsphy* at mii? phy ?			# Integrated Circuit Systems ICS189x
-igphy*	at mii? phy ?			# Intel IGP01E1000
-ihphy*	at mii? phy ?			# Intel 82577 PHYs
-ikphy*	at mii? phy ?			# Intel 82563 PHYs
-inphy*	at mii? phy ?			# Intel 82555 PHYs
-iophy*	at mii? phy ?			# Intel 82553 PHYs
-ipgphy* at mii? phy ?			# IC PLUS IP1000A/IP1001 PHYs
-jmphy*	at mii? phy ?			# Jmicron JMP202/211 PHYs
-lxtphy* at mii? phy ?			# Level One LXT-970 PHYs
-makphy* at mii? phy ?			# Marvell Semiconductor 88E1000 PHYs
-micphy* at mii? phy ?			# Micrel KSZ[89]xxx PHYs
-nsphy*	at mii? phy ?			# NS83840 PHYs
-nsphyter* at mii? phy ? 		# NS83843 PHYs
-pnaphy* at mii? phy ?			# generic HomePNA PHYs
-qsphy*	at mii? phy ?			# Quality Semiconductor QS6612 PHYs
-rgephy* at mii? phy ?			# Realtek 8169S/8110 internal PHYs
-rlphy*	at mii? phy ?			# Realtek 8139/8201L PHYs
-smscphy* at mii? phy ?			# SMSC LAN87xx PHYs
-sqphy*	at mii? phy ?			# Seeq 80220/80221/80223 PHYs
-tlphy*	at mii? phy ?			# ThunderLAN PHYs
-tqphy*	at mii? phy ?			# TDK Semiconductor PHYs
-ukphy*	at mii? phy ?			# generic unknown PHYs
-urlphy* at mii? phy ?			# Realtek RTL8150L internal PHYs
+#ciphy*	at mii? phy ?			# Cicada CS8201 Gig-E PHYs
+#dmphy*	at mii? phy ?			# Davicom DM9101 PHYs
+#etphy*	at mii? phy ?			# Agere/LSI ET1011 TruePHY Gig-E PHYs
+#exphy*	at mii? phy ?			# 3Com internal PHYs
+#gentbi* at mii? phy ?			# Generic Ten-Bit 1000BASE-[CLS]X PHYs
+#glxtphy* at mii? phy ?			# Level One LXT-1000 PHYs
+#gphyter* at mii? phy ?			# NS83861 Gig-E PHY
+#icsphy* at mii? phy ?			# Integrated Circuit Systems ICS189x
+#igphy*	at mii? phy ?			# Intel IGP01E1000
+#ihphy*	at mii? phy ?			# Intel 82577 PHYs
+#ikphy*	at mii? phy ?			# Intel 82563 PHYs
+#inphy*	at mii? phy ?			# Intel 82555 PHYs
+#iophy*	at mii? phy ?			# Intel 82553 PHYs
+#ipgphy* at mii? phy ?			# IC PLUS IP1000A/IP1001 PHYs
+#jmphy*	at mii? phy ?			# Jmicron JMP202/211 PHYs
+#lxtphy* at mii? phy ?			# Level One LXT-970 PHYs
+#makphy* at mii? phy ?			# Marvell Semiconductor 88E1000 PHYs
+#micphy* at mii? phy ?			# Micrel KSZ[89]xxx PHYs
+#nsphy*	at mii? phy ?			# NS83840 PHYs
+#nsphyter* at mii? phy ? 		# NS83843 PHYs
+#pnaphy* at mii? phy ?			# generic HomePNA PHYs
+#qsphy*	at mii? phy ?			# Quality Semiconductor QS6612 PHYs
+#rgephy* at mii? phy ?			# Realtek 8169S/8110 internal PHYs
+#rlphy*	at mii? phy ?			# Realtek 8139/8201L PHYs
+#smscphy* at mii? phy ?			# SMSC LAN87xx PHYs
+#sqphy*	at mii? phy ?			# Seeq 80220/80221/80223 PHYs
+#tlphy*	at mii? phy ?			# ThunderLAN PHYs
+#tqphy*	at mii? phy ?			# TDK Semiconductor PHYs
+#ukphy*	at mii? phy ?			# generic unknown PHYs
+#urlphy* at mii? phy ?			# Realtek RTL8150L internal PHYs
 
 
 # USB Controller and Devices
@@ -969,7 +969,7 @@ uhci*	at pci?	dev ? function ?	# Universal Host Controller (Intel)
 # USB bus support
 #usb*	at vhci?
 usb*	at xhci?
-usb*	at ehci?
+#usb*	at ehci?
 usb*	at ohci?
 usb*	at uhci?
 #usb*	at slhci?
