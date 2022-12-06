@@ -493,10 +493,10 @@ cy*	at pci? dev ? function ?	# Cyclades Cyclom-Y serial boards
 cz*	at pci? dev ? function ?	# Cyclades-Z multi-port serial boards
 
 # PCMCIA serial interfaces
-com*	at pcmcia? function ?		# Modems and serial cards
+#com*	at pcmcia? function ?		# Modems and serial cards
 
-pcmcom* at pcmcia? function ?		# PCMCIA multi-port serial cards
-com*	at pcmcom? slave ?		# ...and the slave devices
+#pcmcom* at pcmcia? function ?		# PCMCIA multi-port serial cards
+#com*	at pcmcom? slave ?		# ...and the slave devices
 
 # CardBus serial interfaces
 #com*	at cardbus? function ?	# Modems and serial cards
@@ -664,11 +664,11 @@ mly*	at pci? dev ? function ?	# Mylex AcceleRAID and eXtremeRAID
 mpt*	at pci? dev ? function ?	# LSILogic 9x9 and 53c1030 (Fusion-MPT)
 mpii*	at pci? dev ? function ?	# LSI Logic Fusion-MPT II
 njs*	at pci? dev ? function ?	# Workbit NinjaSCSI-32
-pcscp*	at pci? dev ? function ?	# AMD 53c974 PCscsi-PCI SCSI
-siop*	at pci? dev ? function ?	# Symbios 53c8xx SCSI
-esiop*	at pci? dev ? function ?	# Symbios 53c875 and newer SCSI
+#pcscp*	at pci? dev ? function ?	# AMD 53c974 PCscsi-PCI SCSI
+#siop*	at pci? dev ? function ?	# Symbios 53c8xx SCSI
+#esiop*	at pci? dev ? function ?	# Symbios 53c875 and newer SCSI
 #options 	SIOP_SYMLED		# drive the act. LED in software
-trm*	at pci? dev ? function ?	# Tekram DC-395U/UW/F, DC-315/U SCSI
+#trm*	at pci? dev ? function ?	# Tekram DC-395U/UW/F, DC-315/U SCSI
 
 # PCMCIA SCSI controllers
 #aic*	at pcmcia? function ?		# Adaptec APA-1460 SCSI
@@ -681,38 +681,38 @@ trm*	at pci? dev ? function ?	# Tekram DC-395U/UW/F, DC-315/U SCSI
 #njs*	at cardbus? function ?	# Workbit NinjaSCSI-32
 
 # SCSI bus support
-scsibus* at scsi?
+#scsibus* at scsi?
 
 # SCSI devices
-sd*	at scsibus? target ? lun ?	# SCSI disk drives
-st*	at scsibus? target ? lun ?	# SCSI tape drives
-cd*	at scsibus? target ? lun ?	# SCSI CD-ROM drives
-ch*	at scsibus? target ? lun ?	# SCSI autochangers
-ses*	at scsibus? target ? lun ?	# SCSI Enclosure Services devices
-ss*	at scsibus? target ? lun ?	# SCSI scanners
-uk*	at scsibus? target ? lun ?	# SCSI unknown
+#sd*	at scsibus? target ? lun ?	# SCSI disk drives
+#st*	at scsibus? target ? lun ?	# SCSI tape drives
+#cd*	at scsibus? target ? lun ?	# SCSI CD-ROM drives
+#ch*	at scsibus? target ? lun ?	# SCSI autochangers
+#ses*	at scsibus? target ? lun ?	# SCSI Enclosure Services devices
+#ss*	at scsibus? target ? lun ?	# SCSI scanners
+#uk*	at scsibus? target ? lun ?	# SCSI unknown
 
 
 # RAID controllers and devices
-aac*	at pci? dev ? function ?	# Adaptec AAC family
-amr*	at pci? dev ? function ?	# AMI/LSI Logic MegaRAID
-arcmsr* at pci? dev ? function ?	# Areca SATA RAID controllers
-cac*	at pci? dev ? function ?	# Compaq PCI array controllers
-ciss*	at pci? dev ? function ?	# HP Smart Array controllers
-icp*	at pci? dev ? function ?	# ICP-Vortex GDT & Intel RAID
-mlx*	at pci? dev ? function ?	# Mylex DAC960 & DEC SWXCR family
-twe*	at pci? dev ? function ?	# 3ware Escalade RAID controllers
-twa*	at pci? dev ? function ?	# 3ware Escalade 9xxx RAID controllers
+#aac*	at pci? dev ? function ?	# Adaptec AAC family
+#amr*	at pci? dev ? function ?	# AMI/LSI Logic MegaRAID
+#arcmsr* at pci? dev ? function ?	# Areca SATA RAID controllers
+#cac*	at pci? dev ? function ?	# Compaq PCI array controllers
+#ciss*	at pci? dev ? function ?	# HP Smart Array controllers
+#icp*	at pci? dev ? function ?	# ICP-Vortex GDT & Intel RAID
+#mlx*	at pci? dev ? function ?	# Mylex DAC960 & DEC SWXCR family
+#twe*	at pci? dev ? function ?	# 3ware Escalade RAID controllers
+#twa*	at pci? dev ? function ?	# 3ware Escalade 9xxx RAID controllers
 
-ld*	at aac? unit ?
-ld*	at amr? unit ?
-ld*	at cac? unit ?
-ld*	at icp? unit ?
-ld*	at twe? unit ?
-ld*	at twa? unit ?
-ld*	at mlx? unit ?
+#ld*	at aac? unit ?
+#ld*	at amr? unit ?
+#ld*	at cac? unit ?
+#ld*	at icp? unit ?
+#ld*	at twe? unit ?
+#ld*	at twa? unit ?
+#ld*	at mlx? unit ?
 
-icpsp*	at icp? unit ?			# SCSI pass-through
+#icpsp*	at icp? unit ?			# SCSI pass-through
 
 # IDE and related devices
 # PCI IDE controllers - see pciide(4) for supported hardware.
@@ -874,24 +874,24 @@ wpi*	at pci? dev ? function ?	# Intel PRO/Wireless 3945ABG
 xge*	at pci? dev ? function ?	# Neterion (S2io) Xframe-I 10GbE
 
 # PCMCIA network interfaces
-an*	at pcmcia? function ?		# Aironet PC4500/PC4800 (802.11)
-awi*	at pcmcia? function ?		# BayStack 650/660 (802.11FH/DS)
-cnw*	at pcmcia? function ?		# Xircom/Netwave AirSurfer
-cs*	at pcmcia? function ?		# CS89xx Ethernet
-ep*	at pcmcia? function ?		# 3Com 3c589 and 3c562 Ethernet
-malo*	at pcmcia? function ?		# Marvell Libertas
-mbe*	at pcmcia? function ?		# MB8696x based Ethernet
-ne*	at pcmcia? function ?		# NE2000-compatible Ethernet
-ray*	at pcmcia? function ?		# Raytheon Raylink (802.11)
-sm*	at pcmcia? function ?		# Megahertz Ethernet
-wi*	at pcmcia? function ?		# Lucent/Intersil WaveLan IEEE (802.11)
-xirc*	at pcmcia? function ?		# Xircom CreditCard Ethernet
-com*	at xirc?
-xi*	at xirc?
+#an*	at pcmcia? function ?		# Aironet PC4500/PC4800 (802.11)
+#awi*	at pcmcia? function ?		# BayStack 650/660 (802.11FH/DS)
+#cnw*	at pcmcia? function ?		# Xircom/Netwave AirSurfer
+#cs*	at pcmcia? function ?		# CS89xx Ethernet
+#ep*	at pcmcia? function ?		# 3Com 3c589 and 3c562 Ethernet
+#malo*	at pcmcia? function ?		# Marvell Libertas
+#mbe*	at pcmcia? function ?		# MB8696x based Ethernet
+#ne*	at pcmcia? function ?		# NE2000-compatible Ethernet
+#ray*	at pcmcia? function ?		# Raytheon Raylink (802.11)
+#sm*	at pcmcia? function ?		# Megahertz Ethernet
+#wi*	at pcmcia? function ?		# Lucent/Intersil WaveLan IEEE (802.11)
+#xirc*	at pcmcia? function ?		# Xircom CreditCard Ethernet
+#com*	at xirc?
+#xi*	at xirc?
 
-mhzc*	at pcmcia? function ?		# Megahertz Ethernet/Modem combo cards
-com*	at mhzc?
-sm*	at mhzc?
+#mhzc*	at pcmcia? function ?		# Megahertz Ethernet/Modem combo cards
+#com*	at mhzc?
+#sm*	at mhzc?
 
 # CardBus network cards
 #ath*	at cardbus? function ?	# Atheros 5210/5211/5212 802.11
@@ -964,7 +964,7 @@ uhci*	at pci?	dev ? function ?	# Universal Host Controller (Intel)
 #slhci0	at isa? port 0x300 irq 5	# ScanLogic SL811HS
 
 # PCMCIA USB controllers
-slhci*	at pcmcia? function ?		# ScanLogic SL811HS
+#slhci*	at pcmcia? function ?		# ScanLogic SL811HS
 
 # USB bus support
 #usb*	at vhci?
@@ -972,7 +972,7 @@ usb*	at xhci?
 usb*	at ehci?
 usb*	at ohci?
 usb*	at uhci?
-usb*	at slhci?
+#usb*	at slhci?
 
 include "dev/usb/usbdevices.config"
 
@@ -1063,8 +1063,8 @@ radio* at bktr?
 # Bluetooth Controller and Device support
 
 # Bluetooth PCMCIA Controllers
-bt3c* at pcmcia? function ?		# 3Com 3CRWB6096-A
-btbc* at pcmcia? function ?		# AnyCom BlueCard LSE041/039/139
+#bt3c* at pcmcia? function ?		# 3Com 3CRWB6096-A
+#btbc* at pcmcia? function ?		# AnyCom BlueCard LSE041/039/139
 
 # Bluetooth SDIO Controllers
 sbt* at sdmmc?
@@ -1075,8 +1075,8 @@ aubtfwl* at uhub? port ?
 
 # Bluetooth Device Hub
 bthub* at bcsp?
-bthub* at bt3c?
-bthub* at btbc?
+#bthub* at bt3c?
+#bthub* at btbc?
 bthub* at btuart?
 bthub* at sbt?
 bthub* at ubt?
