@@ -382,35 +382,35 @@ wmimsi* 	at acpiwmibus?		# MSI WMI mappings
 
 # PCI bus support
 pci*	at mainbus? bus ?
-pci*	at pchb? bus ?
+#pci*	at pchb? bus ?
 pci*	at ppb? bus ?
 
 # PCI bridges
 pchb*	at pci? dev ? function ?	# PCI-Host bridges
 options 	AGP_X86
-pcib*	at pci? dev ? function ?	# PCI-ISA bridges
+#pcib*	at pci? dev ? function ?	# PCI-ISA bridges
 ppb*	at pci? dev ? function ?	# PCI-PCI bridges
 # XXX 'puc's aren't really bridges, but there's no better place for them here
-puc*	at pci? dev ? function ?	# PCI "universal" comm. cards
+#puc*	at pci? dev ? function ?	# PCI "universal" comm. cards
 
-amdpcib* at pci? dev ? function ?	# AMD 8111 PCI-ISA w/ HPET
-hpet*	at amdpcib?
+#amdpcib* at pci? dev ? function ?	# AMD 8111 PCI-ISA w/ HPET
+#hpet*	at amdpcib?
 
-pwdog*	at pci? dev ? function ?	# QUANCOM PWDOG1
+#pwdog*	at pci? dev ? function ?	# QUANCOM PWDOG1
 
 ichlpcib* at pci? dev ? function ?	# Intel ICH PCI-LPC w/ timecounter,
 					# watchdog, gpio, Speedstep and HPET
-fwhrng* at ichlpcib?		# Intel 82802 FWH Random Number Generator
+#fwhrng* at ichlpcib?		# Intel 82802 FWH Random Number Generator
 #hpet*	at ichlpcib?
 tco*	at ichlpcib?		# TCO watch dog timer
 
-aapic*	at pci? dev ? function ?	# AMD 8131 IO apic
+#aapic*	at pci? dev ? function ?	# AMD 8131 IO apic
 
-agp*	at pchb?
+#agp*	at pchb?
 
 # ISA bus support
 isa0	at mainbus?
-isa0	at pcib?
+#isa0	at pcib?
 #isa0	at amdpcib?
 isa0	at ichlpcib?
 
@@ -488,7 +488,7 @@ tpm*	at isa? iomem 0xfed40000 irq 7
 # Serial Devices
 
 # PCI serial interfaces
-com*	at puc? port ?			# 16x50s on "universal" comm boards
+#com*	at puc? port ?			# 16x50s on "universal" comm boards
 cy*	at pci? dev ? function ?	# Cyclades Cyclom-Y serial boards
 cz*	at pci? dev ? function ?	# Cyclades-Z multi-port serial boards
 
@@ -509,7 +509,7 @@ com1	at isa? port 0x2f8 irq 3
 # Parallel Printer Interfaces
 
 # PCI parallel printer interfaces
-lpt*	at puc? port ?			# || ports on "universal" comm boards
+#lpt*	at puc? port ?			# || ports on "universal" comm boards
 
 # ISA parallel printer interfaces
 lpt0	at isa? port 0x378 irq 7	# standard PC parallel ports
